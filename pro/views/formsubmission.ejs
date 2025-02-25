@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Submission</title>
+</head>
+<body>
+    <h2>Form Submission</h2>
+    
+    <% if (user.name && user.rollno) { %>
+        <p>Success! Hello <b><%= user.name %></b>, welcome to FEWD. Your Roll No: <b><%= user.rollno %></b></p>
+    <% } else { %>
+        <p>No details found. Please fill out the form.</p>
+    <% } %>
+
+    <a href="/">Go back</a>
+</body>
+</html>

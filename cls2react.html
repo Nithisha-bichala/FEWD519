@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="d" >this has to be change</div>
+    <input type="button" value="clickme" onclick="fun()"  id="submit">
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://unpkg.com/react@17/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js" crossorigin></script>
+    <script type="text/babel">
+        let header=<div><h3>this is my header</h3></div>
+        let mydiv=<div>
+            <p> Hello ,this is nithisha from kmit </p>
+            <input type="button" value="clickme" /></div>
+            let footer=<div><h3>this is my footer</h3></div>
+            function fun() {
+                let parentNode = document.getElementById('d');
+                ReactDOM.render([header,mydiv,footer],parentNode);
+                document.getElementById("submit").style.display="none";
+            }
+    </script>
+</body>
+</html>
